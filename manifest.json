@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome Prompt API Demo",
+  "version": "1.0.0",
+  "description": "A Chrome extension demonstrating the built-in Prompt API",
+  "permissions": [
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.svg",
+      "48": "icon48.svg",
+      "128": "icon128.svg"
+    }
+  },
+  "icons": {
+    "16": "icon16.svg",
+    "48": "icon48.svg",
+    "128": "icon128.svg"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}

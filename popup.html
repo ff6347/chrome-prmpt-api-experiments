@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chrome Prompt API Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Chrome Prompt API Demo</h1>
+
+    <div class="status-section">
+      <h2>API Status</h2>
+      <div id="api-status" class="status-box">
+        <span class="status-indicator">⏳</span>
+        <span id="status-text">Checking...</span>
+      </div>
+    </div>
+
+    <div class="input-section">
+      <h2>Try the Prompt API</h2>
+      <textarea
+        id="prompt-input"
+        placeholder="Enter your prompt here... (e.g., 'Write a haiku about coding')"
+        rows="4"
+      ></textarea>
+
+      <div class="button-group">
+        <button id="send-prompt" class="primary-button">Send Prompt</button>
+        <button id="clear-button" class="secondary-button">Clear</button>
+      </div>
+    </div>
+
+    <div class="output-section">
+      <h2>Response</h2>
+      <div id="response-output" class="output-box">
+        <span class="placeholder">Response will appear here...</span>
+      </div>
+      <div id="loading" class="loading hidden">
+        <div class="spinner"></div>
+        <span>Generating response...</span>
+      </div>
+    </div>
+
+    <div class="info-section">
+      <details>
+        <summary>About the Prompt API</summary>
+        <p>
+          This extension uses Chrome's built-in Prompt API (part of Gemini Nano).
+          Make sure you have:
+        </p>
+        <ul>
+          <li>Chrome 127 or later</li>
+          <li>Enabled the necessary flags (see README)</li>
+          <li>Downloaded the AI model</li>
+        </ul>
+      </details>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
