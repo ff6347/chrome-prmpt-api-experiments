@@ -45,6 +45,15 @@ Before using this extension, you need:
 
    Use Ctrl+F (or Cmd+F on Mac) to search for "model" to find it more easily.
 
+   **If you don't see this component:**
+   - First, verify you enabled the flags in Step 1 and restarted Chrome
+   - Try triggering the download by opening DevTools console and running:
+     ```javascript
+     await window.ai.languageModel.create()
+     ```
+   - Wait a few minutes and refresh the `chrome://components` page
+   - The component should appear once Chrome attempts to use the API
+
 3. Click the **Check for update** button next to the component
 
 4. Wait for the model to download (this may take 10+ minutes, size is approximately 1.5-2.4 GB)
