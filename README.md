@@ -39,13 +39,17 @@ Before using this extension, you need:
 
 1. After restarting Chrome, navigate to `chrome://components`
 
-2. Look for "**Optimization Guide On Device Model**"
+2. Look for one of these component names (the name varies by Chrome version):
+   - **"Optimization Guide On Device Model"**
+   - **"On-Device Model"**
 
-3. Click the **Check for update** button
+   Use Ctrl+F (or Cmd+F on Mac) to search for "model" to find it more easily.
 
-4. Wait for the model to download (this may take several minutes, size is approximately 1.5-2 GB)
+3. Click the **Check for update** button next to the component
 
-5. The version number should update when the download is complete
+4. Wait for the model to download (this may take 10+ minutes, size is approximately 1.5-2.4 GB)
+
+5. The component status will show "Downloading" during the download, and the version number will update when complete (from 0.0.0.0 to an actual version number)
 
 ### Step 3: Verify API Availability
 
