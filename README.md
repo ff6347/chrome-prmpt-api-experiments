@@ -14,11 +14,35 @@ A Chrome extension that demonstrates the use of Chrome's built-in Prompt API (Ge
 
 Before using this extension, you need:
 
-1. **Chrome Version**: Chrome 127 or later (Dev, Canary, or Beta channel recommended)
-2. **Enable Chrome Flags**: Several experimental flags need to be enabled
-3. **Download AI Model**: The Gemini Nano model needs to be downloaded
+1. **Chrome Version**:
+   - **Chrome Canary, Dev, or Beta channel** (versions 127+)
+   - **Chrome Stable 131+** (with flags enabled)
+   - For full extension support without flags: Chrome 138+
+
+   **Important**: Regular Chrome Stable versions below 131 do NOT support this API, even with flags enabled. You must use Chrome Canary, Dev, or Beta channel for testing.
+
+2. **Supported Operating Systems**:
+   - Windows 10 or 11
+   - macOS 13+ (Ventura or later)
+   - Linux
+   - ChromeOS on Chromebook Plus devices
+   - NOT supported: Chrome for Android or iOS
+
+3. **Enable Chrome Flags**: Several experimental flags need to be enabled (for versions below 138)
+
+4. **Download AI Model**: The Gemini Nano model needs to be downloaded (approximately 2GB)
 
 ## Setup Instructions
+
+### Step 0: Install Chrome Canary, Dev, or Beta (if needed)
+
+If you're running regular Chrome Stable below version 131, you need to install one of these:
+
+- **Chrome Canary**: [Download here](https://www.google.com/chrome/canary/)
+- **Chrome Dev**: [Download here](https://www.google.com/chrome/dev/)
+- **Chrome Beta**: [Download here](https://www.google.com/chrome/beta/)
+
+These channels can be installed alongside your regular Chrome without conflicts.
 
 ### Step 1: Enable Chrome Flags
 
